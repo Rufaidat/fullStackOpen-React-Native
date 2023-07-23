@@ -1,12 +1,12 @@
 import { View, StyleSheet, ScrollView, Pressable } from "react-native";
 import Constants from "expo-constants";
-
-import theme from "../theme";
-import AppBarTab from "./AppBarTab";
+import theme from "../../theme";
+import AppBarTab from "../atoms/AppBarTab";
 import { useApolloClient, useQuery } from "@apollo/client";
-import { ME } from "../graphql/queries";
-import AuthStorage from "../utils/authStorage";
-import Text from "./Text";
+import { ME } from "../../graphql/queries";
+import AuthStorage from "../../utils/authStorage";
+import Text from "../atoms/Text";
+import { useNavigate } from "react-router-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -21,19 +21,21 @@ const styles = StyleSheet.create({
 
 const AppBar = () => {
   const { data } = useQuery(ME);
-  console.log(data);
   const apolloClient = useApolloClient();
   const authStorage = new AuthStorage();
-
+  const navigate = useNavigate();
   const handleSignOut = () => {
     authStorage.removeAccessToken();
     apolloClient.resetStore();
+    navigate("/");
   };
+
   return (
     <View style={styles.container}>
       <ScrollView horizontal>
         <AppBarTab text="Repositories" path="/" />
-        {data?.me !== null && <AppBarTab text="SignOut" path="/signin" />}
+        {data?.me && <AppBarTab text="Create a review" path="/create-review" />}
+        {data?.me && <AppBarTab text="My reviews" path="/my-reviews" />}
         {data?.me === null ? (
           <AppBarTab text="SignIn" path="/signin" />
         ) : (
@@ -49,6 +51,7 @@ const AppBar = () => {
             </Text>
           </Pressable>
         )}
+        {data?.me === null && <AppBarTab text="Sign Up" path="/signup" />}
       </ScrollView>
     </View>
   );

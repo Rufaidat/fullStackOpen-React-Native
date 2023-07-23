@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 import { useField } from "formik";
 
-import TextInput from "./TextInput";
-import Text from "./Text";
-import theme from "../theme";
+import TextInput from "../atoms/TextInput";
+import Text from "../atoms/Text";
+import theme from "../../theme";
 
 const styles = StyleSheet.create({
   errorText: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const FormikTextInput = ({ name, secret, ...props }) => {
+const FormikTextInput = ({ name, secret, multiline, ...props }) => {
   const [field, meta, helpers] = useField(name);
   const showError = meta.touched && meta.error;
 
@@ -25,6 +25,7 @@ const FormikTextInput = ({ name, secret, ...props }) => {
         value={field.value}
         error={showError}
         secureTextEntry={secret}
+        multiline={multiline}
         {...props}
       />
       {showError && <Text style={styles.errorText}>{meta.error}</Text>}

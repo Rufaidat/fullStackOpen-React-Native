@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6e4ffc1-2d69-4be0-9023-3220f83aae34" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppBarTab.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormikTextInput.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RepositoryItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RepositoryList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignIn.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Text.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useRepositories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useRepositories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSigIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSigIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/apolloClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/apolloClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/authStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/authStorage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

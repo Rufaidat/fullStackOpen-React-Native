@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\user\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\user\bin;C:\Python311\Scripts;C:\Python311;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Users\user\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.19.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\user\AppData\Roaming\nvm\v16.19.0\node_modules\yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:627:28)
+      at ClientRequest.emit (node:events:513:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:839:9)
+      at Object.onceWrapper (node:events:627:28)
+      at TLSSocket.emit (node:events:525:35)
+      at TLSSocket.Socket._onTimeout (node:net:550:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "name": "rate-repository-app",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "lint": "eslint ./src/**/*.{js,jsx} App.js --no-error-on-unmatched-pattern",
+      "test": "jest"
+    },
+    "jest": {
+      "preset": "jest-expo",
+      "transform": {
+        "^.+\\.jsx?$": "babel-jest"
+      },
+      "transformIgnorePatterns": [
+        "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|react-router-native)"
+      ],
+      "setupFilesAfterEnv": [
+        "<rootDir>/setupTests.js"
+      ]
+    },
+    "dependencies": {
+      "@apollo/client": "^3.7.15",
+      "@expo/metro-config": "^0.7.1",
+      "@expo/webpack-config": "^0.17.0",
+      "@react-native-async-storage/async-storage": "~1.17.3",
+      "date-fns": "^2.30.0",
+      "dotenv": "^16.3.1",
+      "expo": "~46.0.21",
+      "expo-linking": "~3.2.4",
+      "expo-status-bar": "~1.4.0",
+      "formik": "^2.4.2",
+      "graphql": "^15.8.0",
+      "react": "18.0.0",
+      "react-dom": "18.0.0",
+      "react-native": "0.69.9",
+      "react-native-web": "~0.18.7",
+      "react-router-native": "^6.13.0",
+      "yup": "^1.2.0",
+      "@react-native-picker/picker": "2.4.2",
+      "undefined": "__force"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9",
+      "@babel/eslint-parser": "^7.22.5",
+      "@testing-library/jest-native": "^5.4.2",
+      "@testing-library/react-native": "^12.1.2",
+      "eslint": "^8.43.0",
+      "eslint-plugin-jest": "^27.2.2",
+      "eslint-plugin-react": "^7.32.2",
+      "eslint-plugin-react-native": "^4.0.0",
+      "jest": "^29.5.0",
+      "jest-expo": "^48.0.2",
+      "react-test-renderer": "^18.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

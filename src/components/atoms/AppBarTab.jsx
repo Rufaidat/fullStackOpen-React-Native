@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import Text from "./Text";
-import theme from "../theme";
+import theme from "../../theme";
 import { Link } from "react-router-native";
 const styles = StyleSheet.create({
   text: {
